@@ -68,5 +68,6 @@ dnf5 install -y \
 
 #### Example for enabling a System Unit File
 
-systemctl enable sddm
+rm -f /etc/systemd/system/display-manager.service
+systemctl enable sddm.service
 systemctl enable podman.socket
