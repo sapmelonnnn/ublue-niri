@@ -11,7 +11,7 @@ set -ouex pipefail
 
 dnf5 -y copr enable bieszczaders/kernel-cachyos
 rpm -e $(rpm -qa | grep '^kernel-core') --nodeps
-dnf5 -y install kernel-cachyos-headers
+dnf5 -y install kernel-cachyos-devel
 dnf5 -y copr disable bieszczaders/kernel-cachyos
 
 # Install Quickshell + dependencies
