@@ -20,9 +20,9 @@ dnf5 -y install quickshell
 dnf5 -y copr disable errornointernet/quickshell
 
 # Noctalia dependencies
-dnf5 -y copr enable wef/cliphist
+dnf5 -y copr enable alternateved/cliphist
 dnf5 -y install cliphist
-dnf5 -y copr disable wef/cliphist
+dnf5 -y copr disable alternateved/cliphist
 
 dnf5 -y copr enable heus-sueh/packages
 dnf5 -y install matugen
