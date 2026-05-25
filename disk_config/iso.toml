@@ -1,6 +1,6 @@
 [[customizations.user]]
-name = "your-username"
-password = "your-password"
+name = "live"
+password = "1234"
 groups = ["wheel"]
 
 [customizations.installer.kickstart]
