@@ -1,9 +1,5 @@
-[[customizations.user]]
-name = "live"
-password = "1234"
-groups = ["wheel"]
-
 [customizations.installer.kickstart]
 contents = """
 ostreecontainer --url ghcr.io/sapmelonnnn/ublue-niri:latest --no-signature-verification
+user --name=live --password=1234 --groups=wheel
 """
