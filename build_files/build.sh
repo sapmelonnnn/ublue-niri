@@ -32,7 +32,7 @@ dnf5 -y copr disable heus-sueh/packages
 dnf5 install -y \
   niri \
   xwayland-satellite \
-  hyprpaper \
+  swaypaper \
   wl-clipboard \
   brightnessctl \
   cava \
@@ -51,11 +51,11 @@ dnf5 install -y \
   slurp \
   playerctl \
   network-manager-applet \
-  polkit-gnome \
+  mate-polkit \
   thunar-volman \
   thunar-archive-plugin \
   pavucontrol \
-  noto-fonts-emoji \
+  google-noto-emoji-color-fonts \
   papirus-icon-theme \
   sddm \
   xdg-desktop-portal-gtk
