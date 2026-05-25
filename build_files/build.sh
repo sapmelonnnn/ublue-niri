@@ -32,7 +32,7 @@ dnf5 -y copr disable heus-sueh/packages
 dnf5 install -y \
   niri \
   xwayland-satellite \
-  swaypaper \
+  swaybg \
   wl-clipboard \
   brightnessctl \
   cava \
