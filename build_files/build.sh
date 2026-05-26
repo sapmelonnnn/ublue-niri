@@ -9,6 +9,8 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
+rm -f /etc/yum.repos.d/terra-mesa.repo
+
 dnf5 -y copr enable bieszczaders/kernel-cachyos
 rpm -e $(rpm -qa | grep '^kernel-core') --nodeps
 dnf5 -y install kernel-cachyos-devel
@@ -60,7 +62,6 @@ dnf5 install -y \
   sddm \
   xdg-desktop-portal-gtk
 
-dnf5 config-manager setopt terra-mesa.enabled=0
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
