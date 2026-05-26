@@ -59,6 +59,8 @@ dnf5 install -y \
   papirus-icon-theme \
   sddm \
   xdg-desktop-portal-gtk
+
+dnf5 config-manager setopt terra-mesa.enabled=0
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
