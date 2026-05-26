@@ -3,5 +3,5 @@ contents = """
 ostreecontainer --url ghcr.io/sapmelonnnn/ublue-niri:latest --no-signature-verification
 user --name=live --password=1234 --groups=wheel
 clearpart --all --initlabel
-autopart --type xfs
+autopart --type btrfs
 """
